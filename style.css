@@ -1,1 +1,98 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f7f2;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header e Logo */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #777;
+    font-size: 1.1rem;
+}
+
+/* Contenitore Menu */
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    border-bottom: 2px solid #d4a373;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #bc6c25;
+}
+
+/* Singola Portata */
+.menu-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.item-name {
+    color: #283618;
+}
+
+.item-price {
+    color: #bc6c25;
+}
+
+.item-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Responsive: Adattamento per schermi piccoli */
+@media (max-width: 600px) {
+    .item-header {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .item-price {
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+}
